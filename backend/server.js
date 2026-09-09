@@ -1056,8 +1056,7 @@ app.put(
 // ========================================
 // START SERVER
 // ========================================
-
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 
 async function startServer() {
@@ -1066,16 +1065,9 @@ async function startServer() {
 
         await connectMongoDB();
 
-        app.listen(
-            PORT,
-            () => {
-
-                console.log(
-                    `Backend server running on http://localhost:${PORT}`
-                );
-
-            }
-        );
+        app.listen(PORT, "0.0.0.0", () => {
+            console.log(`Backend server running on port ${PORT}`);
+        });
 
     } catch (error) {
 
