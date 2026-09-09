@@ -1,0 +1,72 @@
+/* =========================================
+   APP
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+
+/* =========================================
+   LOGIN ↔ CREATE GEARID
+   PHYSICAL SCROLL SYSTEM
+========================================= */
+
+.auth-scroll-viewport {
+    width: 100%;
+    height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    background: #000;
+}
+
+
+.auth-scroll-track {
+    width: 100%;
+    height: 200vh;
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    /*
+     * THIS is the actual physical movement.
+     */
+    transition:
+        transform 0.75s cubic-bezier(0.77, 0, 0.18, 1);
+
+    will-change: transform;
+}
+
+
+.auth-scroll-page {
+    width: 100%;
+    height: 100vh;
+
+    min-height: 100vh;
+
+    flex: 0 0 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+}

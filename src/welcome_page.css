@@ -1,0 +1,389 @@
+.welcome-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f5efe2;
+  color: #173a2c;
+  overflow: hidden;
+  padding: 42px 5vw 42px;
+  position: relative;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  position: relative;
+  z-index: 5;
+}
+
+.logo-mark {
+  width: 74px;
+  height: 74px;
+
+  border-radius: 50%;
+
+  background: var(--sage);
+  color: var(--forest);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 34px;
+  font-weight: 800;
+
+  position: relative;
+}
+
+.logo-mark::after {
+  content: "";
+  position: absolute;
+
+  width: 15px;
+  height: 28px;
+
+  border-left: 3px solid var(--forest);
+
+  transform: rotate(35deg);
+
+  left: 37px;
+  top: 24px;
+}
+
+.brand-small {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42em;
+  color: var(--forest);
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.welcome-content {
+  min-height: calc(100vh - 150px);
+
+  display: grid;
+
+  grid-template-columns: minmax(0, 1.25fr) minmax(420px, 0.65fr);
+
+  align-items: center;
+
+  gap: 4vw;
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.welcome-left {
+  padding-left: 1vw;
+}
+
+.brand-title {
+  font-size: 280px;
+  font-weight: 900;
+  line-height: 0.78;
+  letter-spacing: -0.075em;
+  font-weight: 800;
+  color: #173a2c;
+  margin: 0 0 34px 0;
+}
+
+.brand-title span {
+  display: block;
+  font-size: 280px;
+  font-weight: 900;
+}
+
+.gear-word {
+    position: relative;
+    display: block;
+    width: max-content;
+}
+
+
+/* =========================
+   LEAVES BESIDE "GEAR"
+========================= */
+
+.gear-word::before,
+.gear-word::after {
+    content: "";
+    position: absolute;
+
+    background: #9caf72;
+
+    border-radius: 100% 0 100% 0;
+
+    pointer-events: none;
+}
+
+
+/* Upper leaf */
+.gear-word::before {
+    width: 34px;
+    height: 62px;
+
+    right: -30px;
+    top: 6px;
+
+    transform: rotate(20deg);
+}
+
+
+/* Lower leaf */
+.gear-word::after {
+    width: 28px;
+    height: 48px;
+
+    right: -5x;
+    top: 55px;
+
+    transform: rotate(40deg);
+}
+
+.tagline {
+  font-size: clamp(25px, 2.2vw, 38px);
+
+  line-height: 1.2;
+
+  font-weight: 400;
+
+  color: var(--charcoal);
+
+  max-width: 800px;
+}
+
+/* =========================
+    RIGHT CONTENT
+=========================*/
+
+.image-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+
+  margin-bottom: 45px;
+  padding-right: 20px;
+
+  color: #6f8067;
+
+  font-size: 30px;
+  font-weight: 600;
+
+  line-height: 1.2;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+/* =========================
+   BOTTOM CONTENT
+========================= */
+
+.welcome-bottom {
+  margin-top: 105px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 50px;
+
+  width: 100%;
+
+  max-width: 1050px;
+}
+
+
+/* =========================
+   MOTTO
+========================= */
+
+.motto {
+  color: var(--forest);
+}
+
+.motto-line {
+  width: 50px;
+  height: 2px;
+
+  background: var(--forest);
+
+  margin-bottom: 25px;
+}
+
+.motto p {
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.34em;
+
+  line-height: 2.15;
+}
+
+
+/* =========================
+   CONTINUE BUTTON
+========================= */
+
+.continue-button {
+  border: none;
+
+  background: var(--coral);
+
+  color: white;
+
+  padding: 20px 34px;
+
+  min-width: 210px;
+
+  border-radius: 50px;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 22px;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.continue-button span {
+  font-size: 27px;
+
+  line-height: 1;
+
+  transition: transform 0.25s ease;
+}
+
+.continue-button:hover {
+  transform: translateY(-3px);
+
+  background: #b95e38;
+
+  box-shadow: 0 12px 28px rgba(23, 58, 44, 0.14);
+}
+
+.continue-button:hover span {
+  transform: translateX(5px);
+}
+
+.continue-button:focus-visible {
+  outline: 3px solid var(--forest);
+  outline-offset: 5px;
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.hero-image-wrapper {
+    height: min(78vh, 900px);
+
+    min-height: 560px;
+
+    position: relative;
+
+    transform: translateY(-25px);
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background: #d9d8ce;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+
+/* Image overlay text */
+
+.image-message {
+  position: absolute;
+
+  top: 48px;
+  left: 48px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  color: white;
+
+  font-size: 22px;
+
+  line-height: 1.15;
+
+  font-weight: 500;
+
+  text-shadow: 0 2px 15px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Bottom image text */
+
+.image-bottom-text {
+  position: absolute;
+
+  bottom: 36px;
+  right: 36px;
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.38em;
+
+  text-align: right;
+
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================================
+   WELCOME → LOGIN FADE TRANSITION
+========================================= */
+
+.welcome-page {
+    transition: opacity 0.5s ease;
+}
+
+.welcome-page.fade-exit {
+    opacity: 0;
+    pointer-events: none;
+}

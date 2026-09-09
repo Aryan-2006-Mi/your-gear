@@ -1,0 +1,473 @@
+/* =========================================
+   CREATE GEAR ID PAGE
+========================================= */
+
+.create-gear-page {
+    width: 100%;
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background-image: url("/create-gearID.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    font-family: "Manrope", sans-serif;
+
+    color: #f5f2e8;
+}
+
+
+/* =========================================
+   DARK OVERLAY
+========================================= */
+
+.create-gear-page::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.42),
+            rgba(0, 0, 0, 0.18),
+            rgba(0, 0, 0, 0.38)
+        );
+
+    z-index: 0;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.create-gear-header {
+    position: absolute;
+
+    top: 45px;
+    left: 60px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    z-index: 5;
+
+    color: #ffffff;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    letter-spacing: 6px;
+}
+
+.brand-circle {
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+
+    background: #b7cd92;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #f5f2e8;
+
+    font-size: 34px;
+    font-weight: 700;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================
+   PORTAL
+========================================= */
+
+.create-gear-portal {
+    position: relative;
+
+    z-index: 2;
+
+    width: 470px;
+
+    padding: 42px 48px;
+
+    box-sizing: border-box;
+
+    background: rgba(10, 12, 12, 0.52);
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+    border-radius: 28px;
+
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.38);
+
+    text-align: center;
+}
+
+
+/* =========================================
+   TOP LINE
+========================================= */
+
+.create-gear-line {
+    width: 58px;
+    height: 2px;
+
+    background: #b7cd92;
+
+    margin: 0 auto 30px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.create-gear-portal h1 {
+    margin: 0;
+
+    font-size: 46px;
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #bfe1cf;
+}
+
+.create-gear-subtitle {
+    margin: 16px 0 38px;
+
+    font-size: 16px;
+
+    color: rgba(255, 255, 255, 0.58);
+}
+
+
+/* =========================================
+   INPUT GROUP
+========================================= */
+
+.create-input-group {
+    text-align: left;
+
+    margin-bottom: 22px;
+}
+
+.create-input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: #bfe1cf;
+}
+
+
+/* =========================================
+   INPUT WRAPPER
+========================================= */
+
+.create-input-wrapper {
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+
+    background: rgba(15, 15, 15, 0.78);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 13px;
+
+    overflow: hidden;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.create-input-wrapper:focus-within {
+    border-color: rgba(191, 225, 207, 0.60);
+
+    background: rgba(10, 10, 10, 0.88);
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.create-input-icon {
+    margin-left: 18px;
+    margin-right: 12px;
+
+    font-size: 20px;
+
+    color: #bfe1cf;
+}
+
+
+/* =========================================
+   INPUT
+========================================= */
+
+.create-input-wrapper input {
+    flex: 1;
+
+    min-width: 0;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    padding: 0 18px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    color: #ffffff;
+}
+
+.create-input-wrapper input::placeholder {
+    color: rgba(255, 255, 255, 0.48);
+}
+
+
+/* =========================================
+   PASSWORD SHOW / HIDE
+========================================= */
+
+.create-show-password {
+    border: none;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    padding: 7px;
+
+    margin-right: 13px;
+
+    color: #bfe1cf;
+
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    transition: opacity 0.2s ease;
+}
+
+.create-show-password:hover {
+    opacity: 0.65;
+}
+
+.create-show-password:focus-visible {
+    outline: 2px solid #b7cd92;
+
+    outline-offset: 2px;
+}
+
+
+/* =========================================
+   GEARID STATUS
+========================================= */
+
+.gearid-status {
+    margin: 8px 4px 0;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+.gearid-status.checking {
+    color: #d6cfc4;
+}
+
+.gearid-status.available {
+    color: #9ed6a8;
+}
+
+.gearid-status.taken {
+    color: #ff6b55;
+}
+
+
+/* =========================================
+   CONTINUE BUTTON
+========================================= */
+
+.create-gear-button {
+    width: 100%;
+
+    height: 58px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #d16b42;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.create-gear-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+
+    background: #c55f38;
+}
+
+.create-gear-button span:last-child {
+    font-size: 22px;
+}
+
+
+/* =========================================
+   DISABLED
+========================================= */
+
+.create-gear-button:disabled {
+    background: rgba(120, 115, 110, 0.72);
+
+    color: rgba(255, 255, 255, 0.48);
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    opacity: 0.78;
+}
+
+
+/* =========================================
+   LOGIN LINK
+========================================= */
+
+.already-have {
+    margin-top: 28px;
+    margin-bottom: 8px;
+
+    color: rgba(255, 255, 255, 0.52);
+
+    font-size: 14px;
+}
+
+.back-login-button {
+    border: none;
+
+    background: transparent;
+
+    color: #bfe1cf;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 4px;
+}
+
+.back-login-button span {
+    font-size: 21px;
+
+    transition: transform 0.2s ease;
+}
+
+.back-login-button:hover {
+    text-decoration: underline;
+}
+
+.back-login-button:hover span {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .create-gear-header {
+        top: 20px;
+        left: 25px;
+    }
+
+    .brand-circle {
+        width: 52px;
+        height: 52px;
+
+        font-size: 26px;
+    }
+
+    .create-gear-header span {
+        font-size: 12px;
+    }
+
+    .create-gear-portal {
+        width: 92vw;
+
+        padding: 35px 25px;
+    }
+
+    .create-gear-portal h1 {
+        font-size: 38px;
+    }
+}

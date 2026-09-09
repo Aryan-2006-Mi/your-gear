@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  font-family: "Manrope", sans-serif;
+
+  --cream: #f5efe2;
+  --forest: #173a2c;
+  --sage: #a9bd91;
+  --coral: #c96a42;
+  --charcoal: #343733;
+
+  color: var(--charcoal);
+  background: var(--cream);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: #f5efe2;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* ========================================
+   AUTH BUTTON-CONTROLLED PAGE TRANSITION
+   ======================================== */
+
+.auth-flow {
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+}
+
+.auth-section {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+
+    position: relative;
+}

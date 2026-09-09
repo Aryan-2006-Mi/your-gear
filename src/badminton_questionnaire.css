@@ -1,0 +1,121 @@
+.badminton-questionnaire {
+    min-height: 100vh;
+    width: 100%;
+    background: #27251b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.questionnaire-container {
+    width: 900px;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.questionnaire-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.questionnaire-header button {
+    background: none;
+    border: none;
+    color: #cbd4cc;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.questionnaire-header span {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.questionnaire-progress {
+    display: flex;
+    gap: 12px;
+    color: #9fa89f;
+    font-size: 13px;
+    margin-bottom: 45px;
+}
+
+.question h1 {
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -2px;
+    margin: 10px 0 45px;
+}
+
+.question p {
+    color: #9fa89f;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 650px;
+}
+
+.options button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 20px 24px;
+
+    background: #302e23;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+
+    color: #dce5d7;
+
+    font-size: 17px;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.options button:hover {
+    background: #38362b;
+}
+
+.options button.selected {
+    background: #164d3b;
+    border-color: #b8dcd0;
+    color: white;
+}
+
+.next-button {
+    margin-top: 45px;
+
+    padding: 18px 30px;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #e8753f;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.next-button span {
+    margin-left: 20px;
+    font-size: 20px;
+}

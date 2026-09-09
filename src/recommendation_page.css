@@ -1,0 +1,159 @@
+.recommendation-page {
+    min-height: 100vh;
+    width: 100%;
+    background: #f7f6f2;
+    box-sizing: border-box;
+    padding: 70px 90px;
+    color: #111;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.recommendation-header {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recommendation-eyebrow {
+    margin: 0 0 18px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f36c21;
+}
+
+.recommendation-header h1 {
+    margin: 0;
+    font-size: 64px;
+    line-height: 1.02;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+
+.recommendation-subtitle {
+    margin: 25px auto 0;
+    max-width: 620px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* =========================
+   OPTIONS
+========================= */
+
+.recommendation-options {
+    max-width: 1100px;
+    margin: 75px auto 0;
+
+    display: flex;
+    gap: 28px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.recommendation-card {
+    position: relative;
+
+    flex: 1;
+    min-height: 330px;
+
+    padding: 38px;
+    border: 1px solid #deddd8;
+    border-radius: 24px;
+
+    background: #fff;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-7px);
+    border-color: #f36c21;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Number */
+
+.recommendation-card-number {
+    font-size: 14px;
+    font-weight: 600;
+    color: #f36c21;
+    letter-spacing: 1px;
+}
+
+
+/* Content */
+
+.recommendation-card-content {
+    margin-top: auto;
+    padding-top: 50px;
+    padding-right: 35px;
+}
+
+.recommendation-card-content h2 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.15;
+    font-weight: 650;
+}
+
+.recommendation-card-content p {
+    margin: 17px 0 0;
+
+    font-size: 16px;
+    line-height: 1.6;
+
+    color: #707070;
+}
+
+
+/* Arrow */
+
+.recommendation-arrow {
+    position: absolute;
+    right: 32px;
+    bottom: 28px;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    background: #f36c21;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 23px;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+.recommendation-card:hover .recommendation-arrow {
+    transform: translateX(5px);
+}
