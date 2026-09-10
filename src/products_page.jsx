@@ -37,7 +37,7 @@ function ProductsPage({ sport }) {
                 // ------------------------------------------
 
                 const preferenceResponse = await fetch(
-                    `http://localhost:5000/api/preferences/${sport}`,
+                    `https://your-gear-backend.onrender.com/api/preferences/${sport}`,
                     {
                         headers: {
                             Authorization: `Bearer ${token}`,
@@ -63,7 +63,7 @@ function ProductsPage({ sport }) {
                 // ------------------------------------------
 
                 const productsResponse = await fetch(
-                    `http://localhost:5000/api/products?sport=${encodeURIComponent(
+                    `https://your-gear-backend.onrender.com/api/products?sport=${encodeURIComponent(
                         sport
                     )}`
                 );

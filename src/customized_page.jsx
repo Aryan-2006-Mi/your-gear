@@ -22,7 +22,7 @@ function CustomizePage({ sport }) {
         }
 
         fetch(
-            `http://localhost:5000/api/preferences/${sport}`,
+            `https://your-gear-backend.onrender.com/api/preferences/${sport}`,
             {
                 headers: {
                     Authorization: `Bearer ${token}`,

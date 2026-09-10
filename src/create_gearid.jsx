@@ -37,7 +37,7 @@ function CreateGearID({
         const timer = setTimeout(async () => {
             try {
                 const response = await fetch(
-                    `http://localhost:5000/api/users/check-gearid?gear_id=${encodeURIComponent(
+                    `https://your-gear-backend.onrender.com/api/users/check-gearid?gear_id=${encodeURIComponent(
                         gearID.trim()
                     )}`
                 );
@@ -108,7 +108,7 @@ function CreateGearID({
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/users",
+                "https://your-gear-backend.onrender.com/api/users",
                 {
                     method: "POST",
 

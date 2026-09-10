@@ -46,7 +46,7 @@ function BadmintonQuestionnaire() {
 
 
         fetch(
-            "http://localhost:5000/api/preferences/Badminton",
+            "https://your-gear-backend.onrender.com/api/preferences/Badminton",
             {
                 headers: {
                     Authorization:
@@ -145,7 +145,7 @@ function BadmintonQuestionnaire() {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/preferences/Badminton",
+                    "https://your-gear-backend.onrender.com/api/preferences/Badminton",
                     {
                         method: "PUT",
 
